@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="index.html" class="logo">
+					<img src="images/logo.svg" alt="" class="logo__img">
+				</a>
+<nav class="menu">
+  <ul class="menu__list">
+    <li class="menu__list-item"><a href="index.html" class="menu__list-link">Главная</a></li>
+    <li class="menu__list-item"><a href="portfolio.html" class="menu__list-link">Портфолио</a></li>
+    <li class="menu__list-item"><a href="contact.html" class="menu__list-link active">Контакты</a></li>
+  </ul>
+</nav>
+
+			</div>
+		</div>
+	</header>
+	
+	<main class="main">
+
+		
+<section class="feedback-section">
+    <div class="container">
+        <div class="eyebrow">Обратная связь</div>
+        <h2 class="title">Связаться с нами</h2>
+        <p class="subtitle">Ответим в течение часа с 10:00 до 20:00. Поможем с подбором и размером.</p>
+    </div>
+</section>
+
+
+<section class="contact-section">
+  <!-- Левая колонка: Форма -->
+  <div class="contact-form-wrapper">
+    <h2 class="section-title">Отправить заявку</h2>
+    <form id="contactForm" class="contact-form">
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">ИМЯ</label>
+          <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">ТЕЛЕФОН</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" placeholder="mail@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">ТЕМА ОБРАЩЕНИЯ</label>
+        <select id="subject" name="subject">
+          <option value="" disabled selected>Выберите тему...</option>
+          <option value="consultation">Консультация</option>
+          <option value="service">Сервис</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="comment">КОММЕНТАРИЙ</label>
+        <textarea id="comment" name="comment" rows="4" placeholder="Опишите ваш запрос..."></textarea>
+      </div>
+
+      <div class="form-checkbox">
+        <input type="checkbox" id="policy" name="policy" required>
+        <label for="policy">Я согласен(а) с <a href="#">политикой конфиденциальности</a> и обработкой персональных данных.</label>
+      </div>
+
+      <button type="submit" class="submit-btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+    </form>
+  </div>
+
+  <!-- Правая колонка: Информация -->
+  <div class="contact-info-wrapper">
+    <h2 class="section-title">Контактная информация</h2>
+    
+    <div class="info-card border-card">
+      <div class="icon"><img src="/images/map.svg" alt=""></div>
+      <div class="details">
+        <h3>Адрес бутика</h3>
+        <p>Москва, ул. Петровка, 20/1, ТЦ «Петровский Пассаж», 1 этаж</p>
+        <p class="time">Пн-Вс: 10:00-20:00</p>
+      </div>
+    </div>
+
+    <div class="info-card gold-card">
+      <div class="icon"><img src="/images/guarantee.svg" alt=""></div>
+      <div class="details">
+        <h3>Гарантия 2 года</h3>
+        <p>Сервисная чистка и полировка — бесплатно в течение всего срока гарантии.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+		
+>
+
+	</main>
+	
+	<footer class="footer">
+		<div class="container">
+			<nav class="footer__menu">
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item"><p class="footer__menu-title">Каталог</p></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Серьги</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Колье</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Браслеты</a></li>
+				</ul>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item"><p class="footer__menu-title">Покупателям</p></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Доставка и оплата</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Возврат и обмен</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Гарантия</a></li>
+				</ul>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item"><p class="footer__menu-title">Мы в соцсетях</p></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">ВКонтакте</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Max</a></li>
+				</ul>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item"><p class="footer__menu-title">Навигация</p></li>
+					<li class="footer__menu-item"><a href="index.html" class="footer__menu-link">Главная</a></li>
+					<li class="footer__menu-item"><a href="portfolio.html" class="footer__menu-link">Портфолио</a></li>
+					<li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="footer__copy">
+				<p class="footer__copy-text">
+					© 2024 D&M Jewelry. Все права защищены.
+				</p>
+			</div>
+			<nav class="copy__nav">
+				<ul class="copy__nav-list">
+					<li class="copy__nav-item"><a href="#" class="copy__nav-link">Политика конфиденциальности</a></li>
+					<li class="copy__nav-item"><a href="#" class="copy__nav-link">Пользовательское соглашение</a></li>
+					<li class="copy__nav-item"><a href="#" class="copy__nav-link">Публичная оферта</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

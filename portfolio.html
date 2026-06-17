@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="index.html" class="logo">
+					<img src="images/logo.svg" alt="" class="logo__img">
+				</a>
+<nav class="menu">
+  <ul class="menu__list">
+    <li class="menu__list-item"><a href="index.html" class="menu__list-link">Главная</a></li>
+    <li class="menu__list-item"><a href="portfolio.html" class="menu__list-link active">Портфолио</a></li>
+    <li class="menu__list-item"><a href="contact.html" class="menu__list-link">Контакты</a></li>
+  </ul>
+</nav>
+
+			</div>
+		</div>
+	</header>
+	
+	<main class="main">
+		
+<section class="selection-section">
+  <div class="container">
+    <span class="selection-subtitle">D&M JEWELRY</span>
+    <h2 class="selection-title">Выберите украшение</h2>
+    <p class="selection-desc">Воспользуйтесь фильтрами для точного подбора</p>
+  </div>
+</section>
+
+
+<section class="catalog-section">
+  <div class="container">
+    
+    <!-- Навигация -->
+    <ul class="catalog-tabs">
+      <li class="tab active" data-filter="all">Все</li>
+      <li class="tab" data-filter="rings">Кольца</li>
+      <li class="tab" data-filter="earrings">Серьги</li>
+      <li class="tab" data-filter="necklaces">Колье</li>
+      <li class="tab" data-filter="bracelets">Браслеты</li>
+      <li class="tab" data-filter="sets">Комплекты</li>
+    </ul>
+
+    <!-- Фильтры -->
+    <div class="catalog-filters">
+      <div class="filters-left">
+        <span class="filter-label">Фильтры:</span>
+        <div class="filter-dropdown">Металл <span><img src="/images/arrowsvg.svg" alt=""></span></div>
+        <div class="filter-dropdown">Камень <span><img src="/images/arrowsvg.svg" alt=""></span></div>
+        <div class="filter-dropdown">Цена <span><img src="/images/arrowsvg.svg" alt=""></span></div>
+        <div class="filter-dropdown">Размер <span><img src="/images/arrowsvg.svg" alt=""></span></div>
+      </div>
+      <div class="filters-right">
+        <div class="filter-dropdown">По популярности <span><img src="/images/arrowsvg.svg" alt=""></span></div>
+      </div>
+    </div>
+
+    <div class="products-grid">
+      
+      <div class="product-card" data-category="bracelets">
+        <div class="product-img-wrapper" style="background-color: #DCE0DD;">
+          <span class="badge badge-hit">ХИТ</span>
+          <button class="btn-fav">♡</button>
+          <span class="img-placeholder">D&M</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Браслет Celeste</h3>
+          <p class="product-desc">Золото 750, сапфир</p>
+          <p class="product-price">от 57 000 ₽</p>
+        </div>
+        <div class="product-actions">
+          <button class="btn-cart">В КОРЗИНУ</button>
+          <button class="btn-more">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="product-card" data-category="rings">
+        <div class="product-img-wrapper" style="background-color: #F3DDDB;">
+          <button class="btn-fav">♡</button>
+          <span class="img-placeholder">D&M</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Кольцо Soleil</h3>
+          <p class="product-desc">Платина 950, рубин</p>
+          <p class="product-price">от 89 000 ₽</p>
+        </div>
+        <div class="product-actions">
+					      <button class="btn-cart">В КОРЗИНУ</button>
+          <button class="btn-more">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="product-card" data-category="earrings">
+        <div class="product-img-wrapper" style="background-color: #F1E5AB;">
+          <span class="badge badge-new">НОВИНКА</span>
+          <button class="btn-fav">♡</button>
+          <span class="img-placeholder">D&M</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Серьги Luce</h3>
+          <p class="product-desc">Белое золото 585</p>
+          <p class="product-price">от 22 000 ₽</p>
+        </div>
+        <div class="product-actions">
+          <button class="btn-cart">В КОРЗИНУ</button>
+          <button class="btn-more">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="product-card" data-category="necklaces">
+        <div class="product-img-wrapper" style="background-color: #DCE0DD;">
+          <button class="btn-fav">♡</button>
+          <span class="img-placeholder">D&M</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Колье Cascade</h3>
+          <p class="product-desc">Золото 585, топаз</p>
+          <p class="product-price">от 38 500 ₽</p>
+        </div>
+        <div class="product-actions">
+          <button class="btn-cart">В КОРЗИНУ</button>
+          <button class="btn-more">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="product-card" data-category="sets">
+        <div class="product-img-wrapper" style="background-color: #F3DDDB;">
+          <span class="badge badge-sale">ЭКСКЛЮЗИВ</span>
+          <button class="btn-fav">♡</button>
+          <span class="img-placeholder">D&M</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Комплект Eden</h3>
+          <p class="product-desc">Золото 585, изумруд</p>
+          <p class="product-price">от 124 000 ₽</p>
+        </div>
+        <div class="product-actions">
+          <button class="btn-cart">В КОРЗИНУ</button>
+          <button class="btn-more">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="product-card" data-category="rings">
+        <div class="product-img-wrapper" style="background-color: #F1E5AB;">
+          <button class="btn-fav">♡</button>
+          <span class="img-placeholder">D&M</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Кольцо Fiore</h3>
+          <p class="product-desc">Серебро 925, аметист</p>
+          <p class="product-price">от 9 900 ₽</p>
+        </div>
+        <div class="product-actions">
+          <button class="btn-cart">В КОРЗИНУ</button>
+          <button class="btn-more">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="product-card" data-category="bracelets">
+        <div class="product-img-wrapper" style="background-color: #DCE0DD;">
+          <span class="badge badge-new">НОВИНКА</span>
+          <button class="btn-fav">♡</button>
+          <span class="img-placeholder">D&M</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Браслет Velvet</h3>
+          <p class="product-desc">Золото 585, бриллиант</p>
+          <p class="product-price">от 55 000 ₽</p>
+        </div>
+        <div class="product-actions">
+          <button class="btn-cart">В КОРЗИНУ</button>
+          <button class="btn-more">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="product-card" data-category="earrings">
+        <div class="product-img-wrapper" style="background-color: #F3DDDB;">
+          <button class="btn-fav">♡</button>
+          <span class="img-placeholder">D&M</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Серьги Dawn</h3>
+          <p class="product-desc">Розовое золото 585</p>
+          <p class="product-price">от 31 000 ₽</p>
+        </div>
+        <div class="product-actions">
+          <button class="btn-cart">В КОРЗИНУ</button>
+          <button class="btn-more">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="product-card" data-category="necklaces">
+        <div class="product-img-wrapper" style="background-color: #F1E5AB;">
+          <button class="btn-fav">♡</button>
+          <span class="img-placeholder">D&M</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Колье Aria</h3>
+          <p class="product-desc">Белое золото 750, жемчуг</p>
+          <p class="product-price">от 48 000 ₽</p>
+        </div>
+        <div class="product-actions">
+          <button class="btn-cart">В КОРЗИНУ</button>
+          <button class="btn-more">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Кнопка Показать еще -->
+    <div class="load-more-container">
+      <button class="btn-load-more">ПОКАЗАТЬ ЕЩЁ</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="custom-order-banner">
+    <div class="content">
+        <span class="subtitle">Индивидуальный заказ</span>
+        <h2 class="title">Не нашли нужный размер?</h2>
+        <p class="desc">Изготовим украшение под ваши параметры за 5-7 рабочих дней.</p>
+    </div>
+    <div class="action">
+        <button class="btn-outline">Запросить индивидуальный заказ</button>
+    </div>
+</section>
+
+
+
+
+
+
+
+	</main>
+	
+	<footer class="footer">
+		<div class="container">
+			<nav class="footer__menu">
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item"><p class="footer__menu-title">Каталог</p></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Серьги</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Колье</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Браслеты</a></li>
+				</ul>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item"><p class="footer__menu-title">Покупателям</p></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Доставка и оплата</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Возврат и обмен</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Гарантия</a></li>
+				</ul>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item"><p class="footer__menu-title">Мы в соцсетях</p></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">ВКонтакте</a></li>
+					<li class="footer__menu-item"><a href="#" class="footer__menu-link">Max</a></li>
+				</ul>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item"><p class="footer__menu-title">Навигация</p></li>
+					<li class="footer__menu-item"><a href="index.html" class="footer__menu-link">Главная</a></li>
+					<li class="footer__menu-item"><a href="portfolio.html" class="footer__menu-link">Портфолио</a></li>
+					<li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="footer__copy">
+				<p class="footer__copy-text">
+					© 2024 D&M Jewelry. Все права защищены.
+				</p>
+			</div>
+			<nav class="copy__nav">
+				<ul class="copy__nav-list">
+					<li class="copy__nav-item"><a href="#" class="copy__nav-link">Политика конфиденциальности</a></li>
+					<li class="copy__nav-item"><a href="#" class="copy__nav-link">Пользовательское соглашение</a></li>
+					<li class="copy__nav-item"><a href="#" class="copy__nav-link">Публичная оферта</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
